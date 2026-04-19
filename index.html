@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Media Project - Mia H</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+
+        <style>
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                background-color: #f4f2f2fe;
+            }
+
+            a{
+                color: black;
+            }
+
+            .navbar{
+                background-color: #94ba94;
+                font-size: medium;
+                color: black;
+                margin: 0px;
+                padding: 15px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .navbar a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: .9em;
+                transition: color 0.3s ease;
+            }
+
+            h1{
+                font-size: large;
+                text-align: center;
+                color: black;
+            }
+
+            .intro-blurb{
+                max-width: 800px;
+                margin: 40px auto;
+                padding: 30px;
+                background-color: #f0f0f0;
+                border-left: 10px solid #94ba94;
+                text-align: left;
+            }
+
+            .intro-blurb h3{
+                margin-top: 0;
+                color: #2e4d2e;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            /* Container for the Z-pattern layout */
+
+            .theme-container{
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            /* Alternating the Z layout */
+
+            .theme-row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 80px;
+                gap: 40px;
+                scroll-margin-top: 80px; /* This prevents the navar from covering the titles when one is clicked - leaves a 80px gap */
+            }
+
+            .theme-row:nth-child(even){
+                flex-direction: row-reverse;
+            }
+
+            .theme-content{
+                flex: 1;
+                padding: 20px;
+                background-color: #bbdebb;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px #94ba94;
+            }
+
+            .theme-visual{
+                flex: 1;
+                height: fit-content;
+                width: fit-content;
+                max-width: 100%; /* The image won't overfill the screen */
+                background-color: #d1d1d1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                border: 2px dashed #94ba94;
+                padding: 30px;
+            }
+
+            h2{
+                font-weight: bold;
+                color: #2e4d2e;
+            }
+
+            @media (max-width: 768px){
+                .theme-row:nth-child(even){
+                    flex-direction: column;
+                }
+            }
+            
+
+            
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href="#consummerism">Overconsumption</a>
+            <a href="#technology">Technology</a>
+            <a href="#waste">Waste</a>
+            <a href="#engagement">Active Living</a>
+        </nav>
+        
+        <h1> Media Project: Directive Sustainability &#x1F30E </h1>
+
+        <section class="intro-blurb">
+            <h3>Overview:</h3>
+            <p>This webpage serves as a guide to sustainable living, modeled after the environmental themes explored in the film <em>WALL-E</em>. Rather than focusing on the narrative, this site analyzes <strong>Overconsumption</strong>, <strong>Technological Reliance</strong>, <strong>Waste Production</strong>, and the significance of <strong>Active Engagement</strong> to provide data-driven insights and sustainable directives.</p>
+            <p>It is vital to make mindful choices in our daily lives. By implementing some of these directives, we can make a significant difference-not only for ourselves but for the greater environment. <strong>Enjoy the webpage!</strong> </p>
+        </section>
+
+        <div class="theme-container">
+
+    <div class="theme-row" id="consummerism">
+        <div class="theme-content" >
+            <h2>Excessive Consumerism</h2>
+            <p>Today, life is often built on an economic model of <a href="https://www.ellenmacarthurfoundation.org/what-is-the-linear-economy" target="_blank">"Take-Make-Waste."</a> Essentially, we are encouraged to consume resources faster than the planet can regenerate them.</p>
+            <p>According to research from Global Footprint Network (as highlighted by <a href="https://sentientmedia.org/overconsumption/" target="_blank"><em>Sentient Media</em></a>), humanity currently uses resources at a rate that would require 1.78 Earths to sustain.</p>
+            <p>Additionally, the <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank">UN</a> reports that 931 million tons of food is wasted each year.</p>
+            <h3>Sustainable Living Directives:</h3>
+                <ul>
+                    <li>Before making a purchase, research the highest quality version you can afford on your budget. Quality products are sturdier and longer lasting—making them better for your wallet and for the planet.</li>
+                    <li>It's important to recognize our actions play a crucial role in reducing waste and minimizing enviornmental impact. For instance, It begins with mindful purchasing decisions, such as opting for products with minimal packaging or choosing items made from recycled materials.</li>
+                </ul>
+        </div>
+        <div class="theme-visual">
+            <a href="https://thrivabilitymatters.org/doing-more-with-less-overconsumption/" target="_blank">
+                <img src="/images/overconsumption.jpg" alt="Photo from THRIVE Publishing" height="600px""> 
+            </a>
+        </div>
+    </div>
+
+    <div class="theme-row" id="technology">
+        <div class="theme-content">
+            <h2>Overreliance on Technology</h2>
+            <p> Oregon Master Naturalist Rebecca Lexa explains in her blog <a href="https://rebeccalexa.com/environmental-generational-amnesia/" target="_blank"><em>Generational Amnesia: When We Forget Nature’s Past</em></a> that automated systems and digital screens can lead to "enviornmental amnesia". This term, coined in a paper by Peter Kahn and Thea Weiss, refers to how each generation 
+                considers how it first experienced a place as its true baseline, and any change that comes after it is abnormal. Essentially, it is a state where we lose our physical and emotional connection to the natural world.</p>
+            <p>Additionally, digital technologies account for rougly 4% of global greenhouse gas emissions, with data centers, servers, and networks consuming vast amounts of energy to store and process data.</p>
+            <h3>Sustainable Living Directives:</h3>
+            <p>Intentionally reducing screen time to engage in physical activites that benefit the environments - think of participating in community cleanups!</p>
+            <p><a href="https://www.techtarget.com/searchcio/definition/green-IT-green-information-technology" target="_blank">Green IT</a> introduces policies to help reduce waste that many of us today can follow:
+                <ul>
+                    <li>Extending device lifespans through repairs and upgrades</li>
+                    <li>Utlizing virtualization software to minimize hardware</li>
+                    <li>Implementing recyling programs when electronics are unrepairable</li>
+                </ul>
+            </p>
+        </div>
+        <div class="theme-visual">
+            <a href="https://www.techtarget.com/searchcio/definition/green-IT-green-information-technology" target="_blank">
+                <img src="images/reduceE-waste.jpg" alt="GreenIT_reduceE-waste" height="350px">
+            </a>
+        </div>
+    </div>
+
+    <div class="theme-row" id="waste">
+        <div class="theme-content">
+            <h2>Waste Production - Our Material Footprint</h2>
+            <p>When products are designed for the dump, we create environment debt that future generations must pay. To put this into perspective: </p>
+            <ul>
+                <li>According to the <a href="https://www.unep.org/resources/global-waste-management-outlook-2024" target="_blank"> Global Waste Management Outlook 2024 Report</a>, 2 billion tons of municipal solid waste are generated annually worldwide.</li>
+                <li>It's been estimated that <a href="https://www.wri.org/insights/how-much-food-does-the-world-waste#:~:text=What%20We%20Know%20%E2%80%94%20and%20What,gas%20emissions%20warming%20the%20planet." target="_blank">1/3 of all food produced globally is wasted, contributing to the unnecesary resource extraction and methane emissions.</a></li>
+            </ul>
+            <h3>Sustainable Living Directives:</h3>
+            <p>With agriculture being the main driver of global deforestation, you’re buying more than just a meal-you might be spending the health of our planet. Meal planning can trim your grocery bill and reduce food waste by ensuring you'll use everything you purchase.</p>
+        </div>
+        <div class="theme-visual">
+            <a href="https://www.usda.gov/foodlossandwaste/consumers" target="_blank">
+                <img src="images/foodwateReduction.jpg" alt="UNReports" height="600px">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="theme-row" id="engagement">
+        <div class="theme-content">
+            <h2>Active Engagement</h2>
+            <p>By choosing to walk or cycle, we reduce our dependency on private, fossil fuel-powered vehicles. This leads to less air pollution, lower <b>CO<sub>2</sub></b> emissions, and significantly less "sedentary time."</p>
+            <p>Its important to note that sustainability isn't just about "buying green"; it's about living active. A sustainable environment is one that encourages us to move our bodies and engage with the physical world.</p>
+            <p>Takemi Sugiyama's article, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3091331/#:~:text=Environmentally%20designed%20to%20promote%20active%20lifestyles%20may,space**%20*%20**Compact%20city%20and%20smart%20growth**" target="_blank"><em>Environments for Active Lifestyles: Sustainable Environments May Enhance Human Health</em></a> emphasizes that a sustainable environment is one that encourages us to move our bodies and engage with the physical world. High-density, walkable neighborhoods with public transit and parks don't just lower greenhouse gas emissions—they protect the surrounding wilderness from "urban sprawl," preserving vital ecosystem services like clean water and local food.</p>
+            <p>The artcile higlights the connection between sustainable environments and lifestyles: environments designed to improve sustainability will also help make residents’ lifestyles more physically active.</p>
+        </div>
+        <div class="theme-visual">
+            <a href="https://sustainableinfrastructure.org/sustainability-and-envision-myths/" target="_blank">
+                <img src="images/Envision-circle-graphic.jpg" height="400px">
+            </a>
+        </div>
+    </div>
+
+</div>
+    </body>
+    <footer style="text-align: center; padding: 30px; background-color: #f4f2f2fe; border-top: 1px dashed #94ba94;">
+        <p style="font-size: 0.8em; color: #555;">
+            This website was hand-coded using <strong>HTML</strong> & <strong>CSS</strong>. The data and images are properly cited, all images are clickable and specific datapoints are hyperlinked directly to their original source.
+        </p>
+        <p style="font-size: 0.7rem; color: #888;">// Developed by Mia Herrera // Spring 2026 //</p>
+    </footer>
+</html>
